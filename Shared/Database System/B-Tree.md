@@ -24,9 +24,11 @@ Every B-Tree depends on a constant integer MINIMUM, which is used to determine h
 - **Rule 6:** Since B-Tree is a type of self-balance trees, every leaf node in B-Tree has the same depth, which avoids the unbalanced problem.
 
 ![B-Tree's Subtree structure](Attachments/Pasted%20image%2020220921105928.png)
+
 *Figure 1.1 - Current node has more subtrees than its current number of elements*
 
 ![B-Tree's Node Values](Attachments/Pasted%20image%2020220921105946.png)
+
 *Figure 1.2 - Each node is following Rule no. 5 as indicated above*
 
 ## References
