@@ -4,7 +4,7 @@ Standard disk-based index structures as B-Tree is not suitable for maintaining i
 
 LSM-Tree, fully known as Log-Structured Merge-Tree, is also a disk-based data structure designed to optimize the process of inserting/deleting indexes at real-time. LSM-Tree uses an algorithm to defer and batch index changes, cascading the changes from from a memory-based component to one or more disk-based components efficiently via merge sort. The algorithm has truly reduced the overhead of continuously writing into the disk compared to traditional access method of B-Tree, which overwhelm the storage media cost. However, there's a catch, the LSM-Tree lacks I/O efficiency of immediate response upon finding or retrieving indexes. In general, LSM-Tree is the most useful when the application is write-intensive rather than read-intensive (Time-series DB, etc.) [1].
 
-Some of the common storage engine which takes advantage of the LSM-Tree data structure which is LevelDB (by Google), RocksDB (by Meta/Facebook). Interestingly, there are many more high-performance databases which are built upon those storage engine such as [TiKV](https://github.com/tikv/tikv), [CockroachDB](https://github.com/cockroachdb/cockroach)and many more.
+Some of the common storage engine which takes advantage of the LSM-Tree data structure which is LevelDB (by Google), RocksDB (by Meta/Facebook). Interestingly, there are many more high-performance databases which are built upon those storage engine such as [TiKV](https://github.com/tikv/tikv), [CockroachDB](https://github.com/cockroachdb/cockroach) and many more.
 ![RocksDB](Attachments/Pasted%20image%2020220922170659.png)
 <center>Figure 1. RocksDB logo by Facebook (now known as Meta)</center>
 
