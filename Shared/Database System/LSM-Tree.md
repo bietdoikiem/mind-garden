@@ -26,7 +26,9 @@ The back-end components inside a fully functional LSM-Tree of the database is qu
 
 ## References
 [1] https://www.cs.umb.edu/~poneil/lsmtree.pdf
-http://rocksdb.org/docs/getting-started.html
+
 [2] https://github.com/facebook/rocksdb/wiki
+
 [3] https://en.wikipedia.org/wiki/Log-structured_merge-tree
+
 [4] https://medium.com/swlh/log-structured-merge-trees-9c8e2bea89e8
