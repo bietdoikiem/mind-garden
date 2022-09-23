@@ -23,7 +23,7 @@ Nowadays, there are multiple levels in LSM-Tree in order to improve the write th
 The back-end components inside a fully functional LSM-Tree of the database is quite complex in order to achieve durability upon high throughput of write requests to the Database [4]. Below is the diagram indicated the interaction of different components inside LSM-Tree for its functionality.
 
 LSMT-based Databases providing high throughput usually consists of six essential components:
-- **WAL** (Write-ahead ordered logs to preverse append/insert operations in case of RAM failures)
+- **WAL** (Write-ahead ordered logs to preserve append/insert operations in case of RAM failures)
 - **MemTable** (in-memory Binary Search Tree for sake of complexity)
 - **SSTable** (Sorted Strings Table)
 - **Index** Trees
