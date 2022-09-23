@@ -21,6 +21,14 @@ Nowadays, there are multiple levels in LSM-Tree in order to improve the write th
 
 ### Architectural Components
 The back-end components inside a fully functional LSM-Tree of the database is quite complex in order to achieve durability upon high throughput of write requests to the Database [4]. Below is the diagram indicated the interaction of different components inside LSM-Tree for its functionality.
+
+LSMT-based Databases providing high throughput usually consists of six essential components:
+- **WAL** (Write-ahead ordered logs to preverse append/insert operations in case of RAM failures)
+- **MemTable** (in-memory Binary Search Tree for sake of complexity)
+- **SSTable** (Sorted Strings Table)
+- **Index** Trees
+- **Compactor** (to clean unused keys flushed from MemTable to SSTable)
+- **Bloom Filter** (enhance query/retrieval operation)
 ![LSM-Tree's Architecture](Attachments/Pasted%20image%2020220922170833.png)
 <center>Figure 3. Architecture of LSM-Tree inside Database</center>
 
