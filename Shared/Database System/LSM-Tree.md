@@ -32,6 +32,13 @@ LSMT-based Databases providing high throughput usually consists of six essential
 ![LSM-Tree's Architecture](Attachments/Pasted%20image%2020220922170833.png)
 <center>Figure 3. Architecture of LSM-Tree inside Database</center>
 
+In order to retrieve data from LSMT-based database, the following steps must be performed:
+- Read request to MemTable to find any recent existing record in memory
+- If not found, check if's the data is indexed
+- If indexed, traverse through index trees to get the correct SSTable file of data's key
+- Traverse through the correct SSTable to find the record matched with the data's key
+Really expensive read right? That's why Bloom Filter is commonly used to optimize the costly read operation inside any LSMT system.
+
 ## References
 [1] https://www.cs.umb.edu/~poneil/lsmtree.pdf
 
