@@ -1,6 +1,7 @@
 # String in Rust
 ![Funny meme regarding Rust's strings](Attachments/Pasted%20image%2020220928144002.png)
-<p align="center"><i> Funny meme in Rust's string data type</i></p>
+*Funny meme in Rust's string data type*
+
 String in Rust is implemented as a collection of bytes.
 
 Rust has only one string type, which is the string slice type `str`, and it is often borrowed under the `&str` form. As mention in chapter 4, string slices are references to some UTF-8 encoded string data stored elsewhere in the computer's memory. String literals are stored in the program's binary; thus, it is a string slice.
